@@ -8,6 +8,7 @@
   /* Note: use background image rather than border-image because border image does not allow user ot use border gradient. */
   /*background: pink;*/
   border: 10px solid transparent;
+  border-left: 0;
   border-radius: 0 100vw 100vw 0;
 
   /*background: conic-gradient(var(--gradient-glow));*/
