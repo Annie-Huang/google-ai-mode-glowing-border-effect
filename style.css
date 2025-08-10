@@ -1,9 +1,13 @@
 .glowing-border {
+  --gradient-glow: yellow, green, blue, purple, red;
+
   margin-block: 3rem;
   padding: 8rem 3rem;
   max-width: 60ch;
 
-  background: pink;
+  /*background: pink;*/
+  border: 10px solid transparent;
+  background: conic-gradient(var(--gradient-glow));
 }
 
 @layer general-styling {
