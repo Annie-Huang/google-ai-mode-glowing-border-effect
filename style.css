@@ -5,9 +5,13 @@
   padding: 8rem 3rem;
   max-width: 60ch;
 
+  /* Note: use background image rather than border-image because border image does not allow user ot use border gradient. */
   /*background: pink;*/
   border: 10px solid transparent;
-  background: conic-gradient(var(--gradient-glow));
+  /*background: conic-gradient(var(--gradient-glow));*/
+  background:
+    linear-gradient(white, white) padding-box,
+    conic-gradient(var(--gradient-glow)) border-box;
 }
 
 @layer general-styling {
