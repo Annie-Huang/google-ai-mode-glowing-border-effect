@@ -5,3 +5,23 @@
 
   background: pink;
 }
+
+@layer general-styling {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: system-ui;
+    /*color-scheme: dark;*/
+  }
+
+  body {
+    margin: 0;
+    overflow-x: clip;
+
+    /* --surface: purple; */
+
+    /*background: var(--surface);*/
+  }
+}
