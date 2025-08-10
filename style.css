@@ -8,10 +8,15 @@
   /* Note: use background image rather than border-image because border image does not allow user ot use border gradient. */
   /*background: pink;*/
   border: 10px solid transparent;
+  border-radius: 0 100vw 100vw 0;
+
   /*background: conic-gradient(var(--gradient-glow));*/
+  /*background:*/
+  /*  linear-gradient(white, white) padding-box,*/
+  /*  conic-gradient(var(--gradient-glow)) border-box;*/
   background:
     linear-gradient(white, white) padding-box,
-    conic-gradient(var(--gradient-glow)) border-box;
+    conic-gradient(from -90deg, var(--gradient-glow)) border-box;
 }
 
 @layer general-styling {
