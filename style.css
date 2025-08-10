@@ -1,0 +1,7 @@
+.glowing-border {
+  margin-block: 3rem;
+  padding: 8rem 3rem;
+  max-width: 60ch;
+
+  background: pink;
+}
