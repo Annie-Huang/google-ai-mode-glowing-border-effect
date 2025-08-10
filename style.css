@@ -20,8 +20,13 @@
   /*  conic-gradient(from -90deg, var(--gradient-glow)) border-box;*/
 
   /* Use Canvas color because Canvas color is your background color if you haven't declare one. So we can use dark mode */
+  /*background:*/
+  /*  linear-gradient(Canvas 0 0) padding-box,*/
+  /*  conic-gradient(from -90deg, var(--gradient-glow)) border-box;*/
+
+  /* Make sure it set to the background color from body if it is set */
   background:
-    linear-gradient(Canvas 0 0) padding-box,
+    linear-gradient(var(--surface, canvas) 0 0) padding-box,
     conic-gradient(from -90deg, var(--gradient-glow)) border-box;
 }
 
@@ -32,15 +37,15 @@
 
   html {
     font-family: system-ui;
-    color-scheme: dark;
+    /*color-scheme: dark;*/
   }
 
   body {
     margin: 0;
     overflow-x: clip;
 
-    /* --surface: purple; */
+    --surface: purple;
 
-    /*background: var(--surface);*/
+    background: var(--surface);
   }
 }
