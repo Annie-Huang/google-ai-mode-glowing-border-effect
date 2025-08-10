@@ -1,0 +1,6 @@
+Make an animated glowing border effect with CSS (https://www.youtube.com/watch?v=JCYo0r67koM)
+
+https://codepen.io/kevinpowell/pen/WbbXRPL
+https://github.com/Annie-Huang/google-ai-mode-glowing-border-effect
+
+------------------------------------------------------------------------------
