@@ -9,3 +9,6 @@ Key to see the major step:
 
 Comment out:
 filter: blur(3rem); in glow-border::after
+Or
+.glow-border::before section.
+
