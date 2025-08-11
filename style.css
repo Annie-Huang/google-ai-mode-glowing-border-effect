@@ -44,12 +44,13 @@
 .glowing-border::after {
   z-index: -1;
   /*inset: 0;*/
-  inset: -1rem;
+  inset: -2rem;
 
   /*background: purple;*/
   background: conic-gradient(from -90deg, var(--gradient-glow));
 
-  /*filter: blur(3rem);*/
+  /* If you comment out the filter line, you can actually seen the outer part is lighter color from the inner part, or the source of origin is the center of the element */
+  filter: blur(3rem);
   opacity: 0.5;
 }
 
