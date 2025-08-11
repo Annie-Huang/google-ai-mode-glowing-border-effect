@@ -43,9 +43,14 @@
 
 .glowing-border::after {
   z-index: -1;
-  inset: 0;
+  /*inset: 0;*/
+  inset: -1rem;
+
   /*background: purple;*/
   background: conic-gradient(from -90deg, var(--gradient-glow));
+
+  /*filter: blur(3rem);*/
+  opacity: 0.5;
 }
 
 @layer general-styling {
