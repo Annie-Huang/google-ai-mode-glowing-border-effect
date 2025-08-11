@@ -4,3 +4,8 @@ https://codepen.io/kevinpowell/pen/WbbXRPL
 https://github.com/Annie-Huang/google-ai-mode-glowing-border-effect
 
 ------------------------------------------------------------------------------
+
+Key to see the major step:
+
+Comment out:
+filter: blur(3rem); in glow-border::after
