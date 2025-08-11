@@ -39,6 +39,11 @@
   border-radius: inherit;
 }
 
+.glowing-border::after {
+  background: purple;
+  inset: 0;
+}
+
 @layer general-styling {
   * {
     box-sizing: border-box;
