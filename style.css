@@ -47,6 +47,8 @@
   background: var(--surface, canvas);
   inset: 2rem;
   left: 0;
+
+  filter: blur(2rem);
 }
 
 /* This is the actual blur effect area. */
@@ -61,7 +63,7 @@
   background: conic-gradient(from -90deg, var(--gradient-glow));
 
   /* If you comment out the filter line, you can actually seen the outer part is lighter color from the inner part, or the source of origin is the center of the element */
-  /*filter: blur(3rem);*/
+  filter: blur(3rem);
   opacity: 0.5;
 }
 
