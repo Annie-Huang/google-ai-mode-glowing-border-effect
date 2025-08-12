@@ -1,3 +1,10 @@
+/* A Better way to animate the color change. */
+@property --glow-deg {
+  syntax: '<angle>';
+  inherits: true;
+  initial-value: 0deg;
+}
+
 /* the colors don't need to be registed */
 @property --clr-1 {
   syntax: '<color>';
