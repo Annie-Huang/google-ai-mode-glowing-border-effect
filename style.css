@@ -45,7 +45,8 @@
 .glowing-border::before {
   z-index: -1;
   background: var(--surface, canvas);
-  inset: 2rem;
+  /*inset: 2rem;*/
+  inset: 1rem;
 
   /*left: 0;*/
   /* you can tell it's not a perfect half circle if you comment out filter: blur line below but guess it doesn't really matter
@@ -63,7 +64,8 @@
   z-index: -2; /* to be behind z-index: -1 in .glow-broder::before, so we can see the <h1> and <p> text */
 
   /*inset: 0;*/
-  inset: -2rem;
+  /*inset: -2rem;*/
+  inset: -1rem;
 
   /*background: purple;*/
   background: conic-gradient(from -90deg, var(--gradient-glow));
