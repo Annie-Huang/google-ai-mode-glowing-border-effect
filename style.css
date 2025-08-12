@@ -2,7 +2,7 @@
 @property --glow-deg {
   syntax: '<angle>';
   inherits: true;
-  initial-value: 0deg;
+  initial-value: -90deg;
 }
 
 /* the colors don't need to be registed */
@@ -69,9 +69,12 @@
   /*  conic-gradient(from -90deg, var(--gradient-glow)) border-box;*/
 
   /* Make sure it set to the background color from body if it is set */
+  /*background:*/
+  /*  linear-gradient(var(--surface, canvas) 0 0) padding-box,*/
+  /*  conic-gradient(from -90deg, var(--gradient-glow)) border-box;*/
   background:
     linear-gradient(var(--surface, canvas) 0 0) padding-box,
-    conic-gradient(from -90deg, var(--gradient-glow)) border-box;
+    conic-gradient(from var(--glow-deg), var(--gradient-glow)) border-box;
 
   position: relative;
   /* create a new stacking context, to make the z-index: -1 in ::after not able to go behind its parent. */
@@ -126,7 +129,8 @@
   inset: -1.5rem;
 
   /*background: purple;*/
-  background: conic-gradient(from -90deg, var(--gradient-glow));
+  /*background: conic-gradient(from -90deg, var(--gradient-glow));*/
+  background: conic-gradient(from var(--glow-deg), var(--gradient-glow));
 
   /* If you comment out the filter line, you can actually seen the outer part is lighter color from the inner part, or the source of origin is the center of the element */
   /*filter: blur(3rem);*/
