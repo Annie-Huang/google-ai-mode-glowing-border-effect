@@ -12,3 +12,6 @@ filter: blur(3rem); in glow-border::after
 Or
 .glow-border::before section.
 
+
+Working all right for both dark-mode and light-mode:
+color-scheme: dark;
