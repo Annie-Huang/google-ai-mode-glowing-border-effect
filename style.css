@@ -32,7 +32,9 @@
 .glowing-border {
   /*--gradient-glow: yellow, green, blue, purple, red;*/
   /* Start and end with the same color of the right side circle (1st .glowing-border) can use conic-gradient early. */
-  --gradient-glow: red, yellow, green, blue, purple, red;
+  /*--gradient-glow: red, yellow, green, blue, purple, red;*/
+  --gradient-glow: var(--clr-1), var(--clr-2), var(--clr-3), var(--clr-4),
+    var(--clr-5), var(--clr-1);
 
   margin-block: 3rem;
   padding: 8rem 3rem;
