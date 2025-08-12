@@ -80,16 +80,20 @@
   /* create a new stacking context, to make the z-index: -1 in ::after not able to go behind its parent. */
   isolation: isolate;
 
+  /*animation: glow 10s infinite;*/
   animation: glow 10s infinite linear;
 }
 
 @keyframes glow {
-  50% {
-    --clr-1: yellow;
-    --clr-2: blue;
-    --clr-3: red;
-    --clr-4: green;
-    --clr-5: purple;
+  /*50% {*/
+  /*  --clr-1: yellow;*/
+  /*  --clr-2: blue;*/
+  /*  --clr-3: red;*/
+  /*  --clr-4: green;*/
+  /*  --clr-5: purple;*/
+  /*}*/
+  100% {
+    --glow-deg: 270deg; /* 270deg because we got -90deg for initial --glow-deg. So changing it to 270deg is start over again */
   }
 }
 
