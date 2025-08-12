@@ -1,3 +1,34 @@
+/* the colors don't need to be registed */
+@property --clr-1 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: red;
+}
+
+@property --clr-2 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: yellow;
+}
+
+@property --clr-3 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: green;
+}
+
+@property --clr-4 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: blue;
+}
+
+@property --clr-5 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: purple;
+}
+
 .glowing-border {
   /*--gradient-glow: yellow, green, blue, purple, red;*/
   /* Start and end with the same color of the right side circle (1st .glowing-border) can use conic-gradient early. */
