@@ -46,7 +46,7 @@
   z-index: -1;
   background: var(--surface, canvas);
   /*inset: 2rem;*/
-  inset: 1rem;
+  inset: 0.5rem;
 
   /*left: 0;*/
   /* you can tell it's not a perfect half circle if you comment out filter: blur line below but guess it doesn't really matter
@@ -55,7 +55,8 @@
   scale: 1.2 1;
   transform-origin: right;
 
-  filter: blur(2rem);
+  /*filter: blur(2rem);*/
+  filter: blur(1rem);
 }
 
 /* This is the actual blur effect area. */
@@ -71,7 +72,8 @@
   background: conic-gradient(from -90deg, var(--gradient-glow));
 
   /* If you comment out the filter line, you can actually seen the outer part is lighter color from the inner part, or the source of origin is the center of the element */
-  filter: blur(3rem);
+  /*filter: blur(3rem);*/
+  filter: blur(1rem);
   opacity: 0.5;
 }
 
