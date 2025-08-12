@@ -33,6 +33,7 @@
   /*--gradient-glow: yellow, green, blue, purple, red;*/
   /* Start and end with the same color of the right side circle (1st .glowing-border) can use conic-gradient early. */
   /*--gradient-glow: red, yellow, green, blue, purple, red;*/
+  /* The reason we use @property is so that we can animate this. */
   --gradient-glow: var(--clr-1), var(--clr-2), var(--clr-3), var(--clr-4),
     var(--clr-5), var(--clr-1);
 
@@ -68,6 +69,18 @@
   position: relative;
   /* create a new stacking context, to make the z-index: -1 in ::after not able to go behind its parent. */
   isolation: isolate;
+
+  animation: glow 10s infinite linear;
+}
+
+@keyframes glow {
+  50% {
+    --clr-1: yellow;
+    --clr-2: blue;
+    --clr-3: red;
+    --clr-4: green;
+    --clr-5: purple;
+  }
 }
 
 .glowing-border::before,
